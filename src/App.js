@@ -1,7 +1,7 @@
 import React from 'react';
 import "./App.css"
 import Call from './components/Call/Call';
-import Main from './components/Main/main';
+import Main from './components/Main';
 
 function App() {
   return (

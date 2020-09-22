@@ -12,6 +12,7 @@ class Header extends Component {
                     <h3 className="menu_h3"><a href="./">Assinaturas</a></h3>
                     <h3 className="menu_h3"><a href="./">FAQ</a></h3>
                     <button className="menu_btn" >Entrar</button>
+
                 </nav>
             </header>
         );
