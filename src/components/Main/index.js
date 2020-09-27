@@ -1,2 +1,2 @@
-import main from './main'
-export default main
+import Main from './Main'
+export default Main
