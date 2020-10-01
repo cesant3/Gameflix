@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from "../Header";
-// import Footer from "../Footer";
+import Footer from "../Footer";
 import "../../Assets/main-img.png"
 import VideoCard1 from "../../Assets/VideoCard-1.png"
 import VideoCard2 from "../../Assets/VideoCard-2.png"
@@ -73,10 +73,10 @@ class Main extends Component {
                                     <Button />
                                 </div>
                             </div>
+                            <Footer />
                         </div>
                     </section>
                 </section>
-
             </section>
         );
     }
