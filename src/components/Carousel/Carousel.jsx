@@ -28,19 +28,19 @@ class Carousel extends Component {
                     <div>
                         <Link to="/Detalhes"><img src={VideoCard} alt="jogo" /></Link>
                     </div><div>
-                        <img src={VideoCard1} alt="jogo" />
+                        <Link to="/Detalhes"><img src={VideoCard1} alt="jogo" /></Link>
                     </div><div>
-                        <img src={VideoCard2} alt="jogo" />
+                        <Link to="/Detalhes"><img src={VideoCard2} alt="jogo" /></Link>
                     </div><div>
-                        <img src={VideoCard3} alt="jogo" />
+                        <Link to="/Detalhes"><img src={VideoCard3} alt="jogo" /></Link>
                     </div><div>
-                        <img src={VideoCard} alt="jogo" />
+                        <Link to="/Detalhes"><img src={VideoCard} alt="jogo" /></Link>
                     </div><div>
-                        <img src={VideoCard1} alt="jogo" />
+                        <Link to="/Detalhes"><img src={VideoCard1} alt="jogo" /></Link>
                     </div><div>
-                        <img src={VideoCard2} alt="jogo" />
+                        <Link to="/Detalhes"><img src={VideoCard2} alt="jogo" /></Link>
                     </div><div>
-                        <img src={VideoCard3} alt="jogo" />
+                        <Link to="/Detalhes"><img src={VideoCard3} alt="jogo" /></Link>
                     </div>
                 </Slider>
             </section>

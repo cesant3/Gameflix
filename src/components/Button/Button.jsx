@@ -4,7 +4,7 @@ import "./style.css";
 class Button extends Component {
     render() { 
         return ( 
-            <button className="menu_btn" >Entrar</button>
+            <button className="menu_btn" > {this.props.label} </button>
          );
     }
 }

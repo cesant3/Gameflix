@@ -10,12 +10,18 @@ import exampleImage from "../../Assets/img-game.png"
 import gamer from "../../Assets/hardcore-gamer.jpg"
 import Button from "../Button"
 import "./style.css"
+import style from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const Topo = style.div `
+    height: 750px;
+`;
 
 class Main extends Component {
     render() {
         return (
             <section className="page">
-                <div className="first">
+                <Topo>
                     <Header />
                     <div className="chamada">
                         <h1 className="title-big">Uma plataforma completa de jogos</h1>
@@ -30,7 +36,7 @@ class Main extends Component {
                             <div className="listaJogos"><img src={VideoCard4} alt="" /></div>
                         </div>
                     </div>
-                </div>
+                </Topo>
                 <section className="main">
                     <div className="second">
                         <section className="position">
@@ -57,20 +63,20 @@ class Main extends Component {
                                 <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur impedit illo necessitatibus, velit, ullam</p>
                             </div>
                         </div>
-                        <div className="callToAction">
+                        <div className="callToAction" id="assinaturas">
                             <h1>Assine agora</h1>
                             <div className="card">
                                 <div className="callToAction-card">
                                     <h2>Standard</h2>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt, quae alias praesentium obcaecati omnis accusantium vel aspernatur animi, numquam distinctio dignissimos veritatis labore corporis eligendi fuga a, dolor placeat!</p>
                                     <h4>R$ xx,xx</h4>
-                                    <Button />
+                                    <Link to="/Cadastro"><Button label="Get Starded"/></Link>
                                 </div>
                                 <div className="callToAction-card">
                                     <h2>Premium</h2>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt, quae alias praesentium obcaecati omnis accusantium vel aspernatur animi, numquam distinctio dignissimos veritatis labore corporis eligendi fuga a, dolor placeat!</p>
                                     <h4>R$ xx,xx</h4>
-                                    <Button />
+                                    <Link to="/Cadastro"><Button label="Get Starded"/></Link>
                                 </div>
                             </div>
                             <Footer />

@@ -31,10 +31,10 @@ function Userpage() {
                 <Tag>RPG</Tag>
                 <Carousel />
                 <br />
-                <Tag>RPG</Tag>
+                <Tag>Aventura</Tag>
                 <Carousel />
                 <br />
-                <Tag>RPG</Tag>
+                <Tag>Ação</Tag>
                 <Carousel />
                 <Footer />
             </Corpo>
