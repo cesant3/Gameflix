@@ -18,18 +18,18 @@ const Input = styled.input`
     border-radius: 5px;
 `;
 
-class Form extends Component {
-    render() {
-        return (
-            <Formulario>
-                <Input type="text" placeholder="Nome" />
-                <Input type="text" placeholder="Sobrenome" />
+class Login extends Component {
+    render() { 
+        return ( 
+            <section>
+                <Formulario>
                 <Input type="text" placeholder="Email" />
                 <Input type="password" placeholder="Senha" />
-                <Link to="/"><Button label="Submit" className="btn"/></Link>
+                <Link to="/UserPage"><Button label="Submit" className="btn"/></Link>
             </Formulario>
-        );
+            </section>
+         );
     }
 }
-
-export default Form;
+ 
+export default Login;

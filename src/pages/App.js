@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Assets/App.css";
-import Main from '../components/Main';
 import styled from 'styled-components';
+import Principal from '../components/Principal/Principal';
 
 const Body = styled.body`
    margin:0;
@@ -9,11 +9,13 @@ const Body = styled.body`
    height:100%;
 `;
 
+
+
 function Home() {
   return (
 
     <Body>
-      <Main />
+      <Principal />
     </Body>
   );
 }

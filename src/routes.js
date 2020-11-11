@@ -4,6 +4,7 @@ import Home from './pages/App';
 import Userpage from './pages/UserPage';
 import Detalhes from './pages/Detalhes';
 import Cadastro from './pages/Cadastro';
+import Login from './pages/LogIn';
 
 const Routes = () => {
     return (
@@ -12,6 +13,7 @@ const Routes = () => {
             <Route path="/UserPage" component={Userpage} exact/>
             <Route path="/Detalhes" component={Detalhes} exact/>
             <Route path="/Cadastro" component={Cadastro} exact/>
+            <Route path="/Login" component={Login} exact/>
         </Switch>
     )
 }

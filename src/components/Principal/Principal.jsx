@@ -13,28 +13,31 @@ import "./style.css"
 import style from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const Topo = style.div `
+const Topo = style.div`
     height: 750px;
 `;
 
-class Main extends Component {
+class Principal extends Component {
+
     render() {
         return (
             <section className="page">
                 <Topo>
-                    <Header />
+                    <Header>
+
+                    </Header>
                     <div className="chamada">
                         <h1 className="title-big">Uma plataforma completa de jogos</h1>
                         <p className="title-medium">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Atirei o pau no gatis, per gatis num morreus. Manduma pindureta quium dia nois paga.</p>
                     </div>
                     <div className="chamada-play">
                         <h1 className="title-big play">Play Now!</h1>
-                        <div className="list list-games">
-                            <div className="listaJogos"><img src={VideoCard1} alt="" /></div>
-                            <div className="listaJogos"><img src={VideoCard2} alt="" /></div>
-                            <div className="listaJogos"><img src={VideoCard3} alt="" /></div>
-                            <div className="listaJogos"><img src={VideoCard4} alt="" /></div>
-                        </div>
+                        <ul className="list list-games">
+                            <li className="listaJogos"><img src={VideoCard1} alt="" /></li>
+                            <li className="listaJogos"><img src={VideoCard2} alt="" /></li>
+                            <li className="listaJogos"><img src={VideoCard3} alt="" /></li>
+                            <li className="listaJogos"><img src={VideoCard4} alt="" /></li>
+                        </ul>
                     </div>
                 </Topo>
                 <section className="main">
@@ -48,7 +51,7 @@ class Main extends Component {
                         <h1>O que os Clientes estão falando</h1>
                         <div className="client-list">
                             <div className="client">
-                                <img src={gamer} alt="gamer" className="gamer" />
+                                <img src={gamer} alt="gamer" className="gamer gamer-th" />
                                 <h3>Fulano da Silva</h3>
                                 <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur impedit illo necessitatibus, velit, ullam</p>
                             </div>
@@ -58,7 +61,7 @@ class Main extends Component {
                                 <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur impedit illo necessitatibus, velit, ullam</p>
                             </div>
                             <div className="client">
-                                <img src={gamer} alt="gamer" className="gamer" />
+                                <img src={gamer} alt="gamer" className="gamer gamer-th" />
                                 <h3>Fulano da Silva</h3>
                                 <p className="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur impedit illo necessitatibus, velit, ullam</p>
                             </div>
@@ -70,13 +73,13 @@ class Main extends Component {
                                     <h2>Standard</h2>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt, quae alias praesentium obcaecati omnis accusantium vel aspernatur animi, numquam distinctio dignissimos veritatis labore corporis eligendi fuga a, dolor placeat!</p>
                                     <h4>R$ xx,xx</h4>
-                                    <Link to="/Cadastro"><Button label="Get Starded"/></Link>
+                                    <Link to="/Cadastro"><Button label="Get Starded" /></Link>
                                 </div>
                                 <div className="callToAction-card">
                                     <h2>Premium</h2>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sunt, quae alias praesentium obcaecati omnis accusantium vel aspernatur animi, numquam distinctio dignissimos veritatis labore corporis eligendi fuga a, dolor placeat!</p>
                                     <h4>R$ xx,xx</h4>
-                                    <Link to="/Cadastro"><Button label="Get Starded"/></Link>
+                                    <Link to="/Cadastro"><Button label="Get Starded" /></Link>
                                 </div>
                             </div>
                             <Footer />
@@ -88,4 +91,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default Principal;
