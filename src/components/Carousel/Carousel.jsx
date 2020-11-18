@@ -5,10 +5,11 @@ import VideoCard from "../../Assets/VideoCard-3.png";
 import VideoCard1 from "../../Assets/VideoCard-1.png";
 import VideoCard2 from "../../Assets/VideoCard-2.png";
 import VideoCard3 from "../../Assets/VideoCard-4.png";
+import VideoCard5 from "../../Assets/VideoCard-5.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//import Slider, { SliderItem } from './components/Slider';
+// import data from '../../data/games.json'
 
 class Carousel extends Component {
 
@@ -25,6 +26,11 @@ class Carousel extends Component {
         return (
             <section className="carousel">
                 <Slider {...settings}>
+                    {/* {data.map((item, index) => {
+                        return (    
+                            <img src={item.imagem1} alt="" key={index} />
+                        )
+                    })} */}
                     <div>
                         <Link to="/Detalhes"><img src={VideoCard} alt="jogo" /></Link>
                     </div><div>
@@ -34,7 +40,7 @@ class Carousel extends Component {
                     </div><div>
                         <Link to="/Detalhes"><img src={VideoCard3} alt="jogo" /></Link>
                     </div><div>
-                        <Link to="/Detalhes"><img src={VideoCard} alt="jogo" /></Link>
+                        <Link to="/Detalhes"><img src={VideoCard5} alt="jogo" /></Link>
                     </div><div>
                         <Link to="/Detalhes"><img src={VideoCard1} alt="jogo" /></Link>
                     </div><div>
@@ -44,21 +50,7 @@ class Carousel extends Component {
                     </div>
                 </Slider>
             </section>
-            // <section className="carousel">
-            //     <div id="items-wrapper">
-            //         <div id="items">
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //             <div class="item"><img src={VideoCard} alt="" /></div>
-            //         </div>
-            //     </div>
-
-            // </section>
+            
         );
     }
 }

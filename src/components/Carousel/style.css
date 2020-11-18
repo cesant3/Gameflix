@@ -36,4 +36,6 @@ img {
 
 .caroussel {
     background-color: #E5E5E5;
+    width: 90%;
+    margin: auto;
 }

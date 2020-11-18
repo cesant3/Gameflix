@@ -14,7 +14,6 @@ const Tag = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     border: 2px solid #ccc;
     border-radius: 8px;
     font-family: Lato;
